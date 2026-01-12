@@ -1,6 +1,6 @@
 import styles from "./Button.module.css";
 
-export default function Button() {
+export default function Button(props) {
   return (
     <button
       type={props.typeButton || "button"}
