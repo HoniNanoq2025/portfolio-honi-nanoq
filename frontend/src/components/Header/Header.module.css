@@ -69,7 +69,7 @@
   cursor: pointer;
 }
 
-.mobileNav {
+.navMobile {
   display: flex;
   flex-direction: column;
   gap: 2rem;
