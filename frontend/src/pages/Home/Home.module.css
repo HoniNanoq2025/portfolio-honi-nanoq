@@ -21,6 +21,20 @@ h2 {
   font-family: "Irish Grover", "Risque", "Poppins", sans-serif;
 }
 
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
 .btnSize {
   width: 200px;
+}
+
+@media (min-width: 993px) {
+  .buttonContainer {
+    flex-direction: row;
+  }
 }
