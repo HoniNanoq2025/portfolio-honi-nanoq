@@ -38,13 +38,14 @@ export default function Home() {
       </div>
       {/* Profile image - leads to About page */}
       <div className={styles.aboutContainer}>
-        <Link to="/about">
+        <Link to="/about" className={styles.imageWrapper}>
           <img
             src={profilePic}
             alt="About Honi - link"
             width={250}
             className={styles.aboutImgLink}
           />
+          <div className={styles.overlayText}>ABOUT</div>
         </Link>
       </div>
       <div className={styles.buttonContainer}>

@@ -21,6 +21,31 @@ h2 {
   font-family: "Irish Grover", "Risque", "Poppins", sans-serif;
 }
 
+.imageWrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.overlayText {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-family: "Irish Grover", "Risque", "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  pointer-events: none; /* Sikrer at teksten ikke blokerer for klik */
+  transition: opacity 0.3s ease;
+}
+
+.imageWrapper:hover .overlayText {
+  opacity: 0.9;
+}
+
 .buttonContainer {
   display: flex;
   flex-direction: column;
@@ -34,7 +59,12 @@ h2 {
 }
 
 @media (min-width: 993px) {
+  .header {
+    margin: 100px 0 15px;
+  }
+
   .buttonContainer {
     flex-direction: row;
+    margin-top: 20px;
   }
 }
