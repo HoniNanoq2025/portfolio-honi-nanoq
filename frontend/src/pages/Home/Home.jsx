@@ -33,7 +33,7 @@ export default function Home() {
       {/* H2 header - font: Irish Grover */}
       <div className={styles.subHeader}>
         <h2>
-          THE PORTFOLIO AND RESUMÉ OF <br /> HONI
+          THE PORTFOLIO AND RESUMÉ OF <br /> HONI NANOQ
         </h2>
       </div>
       {/* Profile image - leads to About page */}

@@ -63,6 +63,14 @@ h2 {
     margin: 100px 0 15px;
   }
 
+  .subHeader{
+    width: 220px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
   .buttonContainer {
     flex-direction: row;
     margin-top: 20px;
