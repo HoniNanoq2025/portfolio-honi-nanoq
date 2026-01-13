@@ -1,5 +1,8 @@
 .header {
-  font-family: "Risque", "Poppins", sans-serif;
+  font-family: "Irish Grover", "Risque", "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 3px;
   display: flex;
   flex-direction: row;
   justify-content: center;

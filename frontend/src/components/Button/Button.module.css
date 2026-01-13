@@ -7,6 +7,7 @@
   font-family: "Irish Grover", "Risque", "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
+  letter-spacing: 2.5px;
   height: 60px;
   transition: background-color 0.3s ease;
 }

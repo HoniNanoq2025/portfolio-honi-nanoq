@@ -27,13 +27,13 @@ export default function Home() {
       {/* H1 header - font: Island Moments */}
       <div className={styles.header}>
         <h1>
-          Welcome <br /> to
+          Welcome
         </h1>
       </div>
       {/* H2 header - font: Irish Grover */}
       <div className={styles.subHeader}>
         <h2>
-          THE PORTFOLIO AND RESUMÉ OF <br /> HONI NANOQ
+          TO THE PORTFOLIO AND RESUMÉ OF <br /> <span className={styles.subHeaderSpan}>HONI NANOQ</span>
         </h2>
       </div>
       {/* Profile image - leads to About page */}

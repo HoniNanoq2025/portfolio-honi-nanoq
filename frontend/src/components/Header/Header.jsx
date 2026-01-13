@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
-import Logo from "../../assets/img/honi-nanoq-logo-03.png";
+import Logo from "../../assets/img/HoniNanoqLogo05-PR-Viking.png";
 import styles from "./Header.module.css";
 
 export default function Header() {
@@ -28,7 +28,7 @@ export default function Header() {
               src={Logo}
               alt="Honi Nanoq personal logo"
               className={styles.logoImage}
-              width={40}
+              height={40}
             />
           </NavLink>
         </div>
