@@ -26,14 +26,13 @@ export default function Home() {
     <div className={styles.home}>
       {/* H1 header - font: Island Moments */}
       <div className={styles.header}>
-        <h1>
-          Welcome
-        </h1>
+        <h1>Welcome</h1>
       </div>
       {/* H2 header - font: Irish Grover */}
       <div className={styles.subHeader}>
         <h2>
-          TO THE PORTFOLIO AND RESUMÉ OF <br /> <span className={styles.subHeaderSpan}>HONI NANOQ</span>
+          TO THE PORTFOLIO AND RESUMÉ OF <br />{" "}
+          <span className={styles.subHeaderSpan}>HONI NANOQ</span>
         </h2>
       </div>
       {/* Profile image - leads to About page */}
@@ -51,19 +50,19 @@ export default function Home() {
       <div className={styles.buttonContainer}>
         <Button
           typeButton="button"
-          onButtonClick={() => handleNavigateProjects}
+          onButtonClick={handleNavigateProjects}
           buttonText="MY PROJECTS"
           btnSize={styles.btnSize}
         />
         <Button
           typeButton="button"
-          onButtonClick={() => handleNavigateResume}
+          onButtonClick={handleNavigateResume}
           buttonText="RESUMÉ"
           btnSize={styles.btnSize}
         />
         <Button
           typeButton="button"
-          onButtonClick={() => handleNavigateContact}
+          onButtonClick={handleNavigateContact}
           buttonText="CONTACT"
           btnSize={styles.btnSize}
         />
