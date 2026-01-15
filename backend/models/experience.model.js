@@ -5,17 +5,21 @@ const experienceSchema = new mongoose.Schema(
   {
     position: {
       type: String,
-      minLength: [6, "Position must contain at least 6 characters"],
+      trim: true, // Automatically trims whitespace at the beginning and end of the string
+      minlength: [6, "Position must contain at least 6 characters"],
     },
 
     positionEnglish: {
       type: String,
-      minLength: [6, "Position in English must contain at least 6 characters"],
+      trim: true, // Automatically trims whitespace at the beginning and end of the string
+      minlength: [6, "Position in English must contain at least 6 characters"],
     },
 
     employmentType: {
       type: String,
+      trim: true, // Automatically trims whitespace at the beginning and end of the string
       required: [true, "Employment type is required"],
+
       enum: {
         values: ["Temporary", "Permanent", "Internship", "Contract"],
         message:
@@ -25,29 +29,43 @@ const experienceSchema = new mongoose.Schema(
 
     company: {
       type: String,
+      trim: true, // Automatically trims whitespace at the beginning and end of the string
       required: [true, "Company is required"],
-      minLength: [4, "Company must contain at least 4 characters"],
+      minlength: [4, "Company must contain at least 4 characters"],
     },
 
     team: {
       type: String,
+      trim: true, // Automatically trims whitespace at the beginning and end of the string
       default: null,
     },
 
     city: {
       type: String,
+      trim: true, // Automatically trims whitespace at the beginning and end of the string
+      required: [true, "City is required"],
+      minlength: [3, "City must contain at least 3 characters"],
     },
 
     country: {
       type: String,
+      trim: true, // Automatically trims whitespace at the beginning and end of the string
+      required: [true, "Country is required"],
+      minlength: [2, "Country must contain at least 2 characters"],
     },
 
     tools: {
-      type: [String],
+      type: [{ type: String, trim: true }],
+      default: [],
+      validate: {
+        validator: (arr) => arr.every((t) => t.length > 0),
+        message: "Tools cannot contain empty strings",
+      },
     },
 
     tasks: {
-      type: [String],
+      type: [{ type: String, trim: true }],
+      required: [true, "Tasks are required"],
       validate: {
         validator: (arr) => arr.length > 0,
         message: "You must add at least one task description",
@@ -78,7 +96,7 @@ const experienceSchema = new mongoose.Schema(
 );
 
 experienceSchema.virtual("isOngoing").get(function () {
-  return this.endDate === null;
+  return !this.endDate;
 });
 
 module.exports = mongoose.model("Experience", experienceSchema);
