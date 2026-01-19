@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import { submitContactForm } from "../../api/fetch";
 import Button from "../Button/Button";
 import styles from "./ContactForm.module.css";
 
@@ -14,11 +15,16 @@ export default function ContactForm() {
 
   const navigate = useNavigate();
 
-  const onSubmit = (data) => {
-    console.log("Formular data sendt", data);
-    toast.success("Tak for din besked!");
-    navigate("/contact/thank-you");
-    reset();
+  const onSubmit = async (data) => {
+    try {
+      await submitContactForm(data);
+      toast.success("Tak for din besked!");
+      navigate("/contact/thank-you");
+      reset();
+    } catch (error) {
+      toast.error(error.message || "Noget gik galt. Prøv igen.");
+      console.error("Error submitting form:", error);
+    }
   };
 
   return (
