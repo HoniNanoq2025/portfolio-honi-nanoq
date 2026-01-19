@@ -3,7 +3,7 @@ const API_URL = import.meta.env.VITE_API_BASE_URL;
 /* ====== FETCH ========  */
 
 // Experience
-export const fetchExperience = async () => {
+export const fetchExperiences = async () => {
   try {
     const res = await fetch(`${API_URL}/experience`);
     const data = await res.json();
@@ -15,7 +15,7 @@ export const fetchExperience = async () => {
 };
 
 // Education
-export const fetchEducation = async () => {
+export const fetchEducations = async () => {
   try {
     const res = await fetch(`${API_URL}/education`);
     const data = await res.json();
@@ -27,7 +27,7 @@ export const fetchEducation = async () => {
 };
 
 // Contact Form
-export const fetchContact = async () => {
+export const fetchContacts = async () => {
   try {
     const res = await fetch(`${API_URL}/contact`);
     const data = await res.json();
