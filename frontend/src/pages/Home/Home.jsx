@@ -6,10 +6,6 @@ import styles from "./Home.module.css";
 export default function Home() {
   const navigate = useNavigate(); // Hook til navigation
 
-  const handleNavigateAbout = () => {
-    navigate("/about");
-  };
-
   const handleNavigateProjects = () => {
     navigate("/projects");
   };
