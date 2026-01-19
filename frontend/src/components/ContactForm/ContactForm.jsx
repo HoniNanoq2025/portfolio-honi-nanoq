@@ -116,7 +116,7 @@ export default function ContactForm() {
         </p>
       )}
 
-      <Button typeButton="submit" buttonText="SEND" />
+      <Button typeButton="submit" buttonText="SEND" btnSize={styles.btnSize} />
     </form>
   );
 }

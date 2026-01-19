@@ -5,6 +5,10 @@
   align-items: center;
   padding: 2rem 0;
   gap: 1.1rem;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 100%;
+  max-width: 900px;
 }
 
 .input,
@@ -16,7 +20,11 @@
   border-radius: 10px;
   font-family: inherit;
   color: black;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 350px;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .input::placeholder,
@@ -29,6 +37,11 @@
   border-color: #0066ff;
   box-shadow: 0 0 6px rgba(0, 102, 255, 0.3);
   outline: none;
+}
+
+.btnSize {
+  width: 100%;
+  max-width: 350px;
 }
 
 @media (min-width: 993px) {
