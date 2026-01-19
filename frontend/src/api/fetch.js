@@ -40,6 +40,30 @@ export const fetchContact = async () => {
 
 /* ====== POST ========  */
 
+// Submit Contact Form
+export const submitContactForm = async (formData) => {
+  try {
+    const res = await fetch(`${API_URL}/contact`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (!res.ok) {
+      const errorData = await res.json();
+      throw new Error(errorData.message || "Failed to send message");
+    }
+
+    const data = await res.json();
+    return data;
+  } catch (err) {
+    console.error("Error submitting contact form:", err);
+    throw err;
+  }
+};
+
 /* ====== PUT ========  */
 
 /* ====== DELETE ========  */
