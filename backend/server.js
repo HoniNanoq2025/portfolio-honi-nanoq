@@ -23,9 +23,9 @@ const experienceRoutes = require("./routes/experience.routes");
 const educationRoutes = require("./routes/education.routes");
 
 // Use routes
-app.use("/api/contact", contactRoutes);
-app.use("/api/experience", experienceRoutes);
-app.use("/api/education", educationRoutes);
+app.use("/contact", contactRoutes);
+app.use("/experience", experienceRoutes);
+app.use("/education", educationRoutes);
 
 // Health check endpoint
 app.get("/", (req, res) => {
