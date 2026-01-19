@@ -36,6 +36,25 @@
   pointer-events: none; /* Sikrer at teksten ikke blokerer for klik */
 }
 
+.name {
+  /* font-weight: 600; */
+  margin-top: 10px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.profileTxt {
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto 50px;
+  padding-left: 50px;
+}
+
+.paragraph {
+  margin: 10px auto;
+}
 @media (min-width: 993px) {
   .aboutHoniPic {
     width: 250px;
