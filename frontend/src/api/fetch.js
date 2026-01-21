@@ -6,8 +6,12 @@ const API_URL = import.meta.env.VITE_API_BASE_URL;
 export const fetchExperiences = async () => {
   try {
     const res = await fetch(`${API_URL}/experience`);
-    const data = await res.json();
-    return data;
+    const json = await res.json();
+
+    return json.data.map((item) => ({
+      ...item,
+      type: "experience",
+    }));
   } catch (err) {
     console.error("Error fetching experiences:", err);
     throw err;
@@ -18,8 +22,12 @@ export const fetchExperiences = async () => {
 export const fetchEducations = async () => {
   try {
     const res = await fetch(`${API_URL}/education`);
-    const data = await res.json();
-    return data;
+    const json = await res.json();
+
+    return json.data.map((item) => ({
+      ...item,
+      type: "education",
+    }));
   } catch (err) {
     console.error("Error fetching education:", err);
     throw err;
