@@ -1,0 +1,213 @@
+/* Container */
+.container {
+  min-height: 100vh;
+  padding: 3rem 1rem;
+}
+
+.wrapper {
+  max-width: 1536px;
+  margin: 0 auto;
+}
+
+/* Typography */
+.risqueFont {
+  font-family: "Risque", "Irish Grover", "Rock Salt", "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.rockSaltFont {
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+}
+
+.poppinsFont {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+.header {
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .header {
+    font-size: 2.25rem;
+  }
+}
+
+.columnHeaders {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.headersWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.columnHeader {
+  font-size: 1.875rem;
+  color: black;
+}
+
+/* Loading */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #60a5fa, #1e3a8a);
+  color: white;
+}
+
+/* Mobile View */
+.mobileView {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .mobileView {
+    display: none;
+  }
+}
+
+.mobileTimeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.mobileVerticalLine {
+  position: absolute;
+  left: 0.75rem;
+  top: 0;
+  width: 0.25rem;
+  background-color: white;
+  height: 100%;
+}
+
+.mobileItems {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mobileItem {
+  position: relative;
+}
+
+.mobileDot {
+  position: absolute;
+  left: -1.5rem;
+  top: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.typeBadge {
+  font-size: 0.75rem;
+  color: black;
+  background-color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.mobileTitle {
+  font-size: 1rem;
+
+  margin-bottom: 0.5rem;
+}
+
+.mobileText {
+  font-size: 0.875rem;
+  color: #1e3a8a;
+}
+
+/* Desktop View */
+.desktopView {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktopView {
+    display: block;
+  }
+}
+
+.desktopTimeline {
+  position: relative;
+}
+
+.centerLine {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0.25rem;
+  background-color: white;
+  height: 100%;
+}
+
+.timelineItems {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.timelineItem {
+  position: relative;
+}
+
+.itemWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.educationColumn {
+  width: 41.666667%;
+  text-align: right;
+  padding-right: 2rem;
+}
+
+.centerDot {
+  width: 16.666667%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+}
+
+.dot {
+  width: 1rem;
+  height: 1rem;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.experienceColumn {
+  width: 41.666667%;
+  padding-left: 2rem;
+}
+
+.desktopTitle {
+  font-size: 1.125rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.desktopText {
+  font-size: 0.875rem;
+  color: white;
+}
