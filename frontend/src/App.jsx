@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
@@ -13,6 +14,7 @@ import styles from "./App.module.css";
 function App() {
   return (
     <div className={styles.app}>
+      <ScrollToTop />
       <Header />
       <main className={styles.main}>
         <Routes>
