@@ -29,8 +29,8 @@ app.use(
     credentials: true,
   }),
 );
-// enable pre-flight for all routes
-app.options("*", cors());
+// enable pre-flight for all routes (handled by cors middleware)
+// removed app.options due to path-to-regexp errors in some host environments
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
