@@ -11,12 +11,13 @@
 
 /* Typography */
 .risqueFont {
-  font-family: "Risque", "Irish Grover", "Rock Salt", "Poppins", sans-serif;
+  font-family:
+    "Risque", "Irish Grover", "Permanent Marker", "Poppins", sans-serif;
   font-weight: 400;
 }
 
-.rockSaltFont {
-  font-family: "Rock Salt", cursive;
+.permanentMarkerFont {
+  font-family: "Permanent Marker", cursive;
   font-weight: 400;
 }
 
@@ -126,11 +127,12 @@
 .mobileTitle {
   font-size: 1rem;
   margin-bottom: 0.5rem;
+  color: #1e3a8a;
 }
 
 .mobileText {
   font-size: 0.875rem;
-  color: #1e3a8a;
+  color: black;
 }
 
 /* Desktop View */
@@ -204,11 +206,11 @@
 
 .desktopTitle {
   font-size: 1.125rem;
-  color: white;
+  color: #1e3a8a;
   margin-bottom: 0.5rem;
 }
 
 .desktopText {
   font-size: 0.875rem;
-  color: white;
+  color: black;
 }

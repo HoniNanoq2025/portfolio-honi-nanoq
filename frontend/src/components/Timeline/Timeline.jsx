@@ -81,7 +81,7 @@ export default function Timeline() {
                     </span>
 
                     <h3
-                      className={`${styles.mobileTitle} ${styles.rockSaltFont}`}
+                      className={`${styles.mobileTitle} ${styles.permanentMarkerFont}`}
                     >
                       {item.type === "education"
                         ? item.title
@@ -128,7 +128,7 @@ export default function Timeline() {
                       {item.type === "education" && (
                         <div>
                           <h3
-                            className={`${styles.desktopTitle} ${styles.rockSaltFont}`}
+                            className={`${styles.desktopTitle} ${styles.permanentMarkerFont}`}
                           >
                             {item.title}
                           </h3>
@@ -151,7 +151,7 @@ export default function Timeline() {
                       {item.type === "experience" && (
                         <div>
                           <h3
-                            className={`${styles.desktopTitle} ${styles.rockSaltFont}`}
+                            className={`${styles.desktopTitle} ${styles.permanentMarkerFont}`}
                           >
                             {item.positionEnglish}
                           </h3>
@@ -168,7 +168,7 @@ export default function Timeline() {
                       {index === 0 && (
                         <Link to="/contact" className={styles.fakeExperience}>
                           <h3
-                            className={`${styles.desktopTitle} ${styles.rockSaltFont}`}
+                            className={`${styles.desktopTitle} ${styles.permanentMarkerFont}`}
                           >
                             This could be with you
                           </h3>
