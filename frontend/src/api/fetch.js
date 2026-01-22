@@ -1,4 +1,23 @@
-const API_URL = import.meta.env.VITE_API_BASE_URL;
+const rawApiUrl = import.meta.env.VITE_API_BASE_URL || "";
+const API_URL = rawApiUrl.replace(/\/+$/, ""); // strip trailing slashes
+
+/* ====== HELPERS ======== */
+async function handleJsonResponse(res) {
+  const text = await res.text();
+  let json = null;
+  try {
+    json = text ? JSON.parse(text) : null;
+  } catch (e) {
+    // not JSON
+  }
+
+  if (!res.ok) {
+    const message = json?.message || text || res.statusText;
+    throw new Error(message);
+  }
+
+  return json;
+}
 
 /* ====== FETCH ========  */
 
@@ -6,9 +25,14 @@ const API_URL = import.meta.env.VITE_API_BASE_URL;
 export const fetchExperiences = async () => {
   try {
     const res = await fetch(`${API_URL}/experience`);
-    const json = await res.json();
+    const json = await handleJsonResponse(res);
 
-    return json.data.map((item) => ({
+    const items = Array.isArray(json?.data)
+      ? json.data
+      : Array.isArray(json)
+        ? json
+        : [];
+    return items.map((item) => ({
       ...item,
       type: "experience",
     }));
@@ -22,9 +46,14 @@ export const fetchExperiences = async () => {
 export const fetchEducations = async () => {
   try {
     const res = await fetch(`${API_URL}/education`);
-    const json = await res.json();
+    const json = await handleJsonResponse(res);
 
-    return json.data.map((item) => ({
+    const items = Array.isArray(json?.data)
+      ? json.data
+      : Array.isArray(json)
+        ? json
+        : [];
+    return items.map((item) => ({
       ...item,
       type: "education",
     }));
@@ -38,8 +67,8 @@ export const fetchEducations = async () => {
 export const fetchContacts = async () => {
   try {
     const res = await fetch(`${API_URL}/contact`);
-    const data = await res.json();
-    return data;
+    const json = await handleJsonResponse(res);
+    return json;
   } catch (err) {
     console.error("Error fetching contact form info:", err);
     throw err;
@@ -59,13 +88,8 @@ export const submitContactForm = async (formData) => {
       body: JSON.stringify(formData),
     });
 
-    if (!res.ok) {
-      const errorData = await res.json();
-      throw new Error(errorData.message || "Failed to send message");
-    }
-
-    const data = await res.json();
-    return data;
+    const json = await handleJsonResponse(res);
+    return json;
   } catch (err) {
     console.error("Error submitting contact form:", err);
     throw err;
