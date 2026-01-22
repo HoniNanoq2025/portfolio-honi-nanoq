@@ -81,6 +81,7 @@
 .mobileTimeline {
   position: relative;
   padding-left: 2rem;
+  padding-bottom: 3rem;
 }
 
 .mobileVerticalLine {
@@ -124,7 +125,6 @@
 
 .mobileTitle {
   font-size: 1rem;
-
   margin-bottom: 0.5rem;
 }
 
@@ -146,6 +146,7 @@
 
 .desktopTimeline {
   position: relative;
+  padding-bottom: 4rem;
 }
 
 .centerLine {
