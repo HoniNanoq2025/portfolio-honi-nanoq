@@ -25,6 +25,12 @@
   color: #1e3a8a;
 }
 
+.bogormen {
+  object-fit: cover;
+  object-position: top center;
+  height: 200px;
+}
+
 .gitHubLink {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
@@ -33,5 +39,6 @@
 @media (min-width: 993px) {
   .projectsContainer {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }

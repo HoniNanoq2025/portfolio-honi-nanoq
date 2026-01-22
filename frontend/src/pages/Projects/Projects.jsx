@@ -4,6 +4,7 @@ import CTMPodcastImg from "../../assets/img/projects/recall-the-midwife-podcast-
 import SmartHomeImg from "../../assets/img/projects/smart-home-school-project.png";
 import TardisMediaImg from "../../assets/img/projects/tardis-media-library-school-project-2025.png";
 import JeopardyImg from "../../assets/img/projects/christmas-jeopardy-school-project-2025.png";
+import BogormenPDF from "../../documents/Bogormen-wordpress-project-2025.pdf";
 import styles from "./Projects.module.css";
 
 export default function Projects() {
@@ -76,6 +77,31 @@ export default function Projects() {
             target="_blank"
           >
             GitHub
+          </a>
+        </div>
+        <div className={styles.projectWrapper}>
+          <h3 className={styles.projectHeader}>Bogormen (The Bookworm)</h3>
+          <a
+            href={BogormenPDF}
+            target="_blank"
+            rel="noopener noreferrer"
+            alt="Bogormen in Wordpress"
+          >
+            <img
+              src={BogormenImg}
+              alt="Bogormen Wordpress project"
+              width={350}
+              className={styles.bogormen}
+            />
+          </a>
+          <a
+            href={BogormenPDF}
+            className={styles.gitHubLink}
+            alt="link to project PDF"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            PDF
           </a>
         </div>
       </div>
