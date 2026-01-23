@@ -148,6 +148,39 @@ export default function Projects() {
             </a>
           </div>
         </div>
+        <div className={styles.projectWrapper}>
+          <h3 className={styles.projectHeader}>Christmas Jeopardy (game)</h3>
+          <a
+            href="https://youtu.be/U1lMY8Fa728"
+            target="_blank"
+            alt="Christmas Jeopardy (game)"
+          >
+            <img
+              src={JeopardyImg}
+              alt="Christmas Jeopardy group project"
+              height={200}
+            />
+          </a>
+          <div className={styles.links}>
+            <a
+              href="https://github.com/HoniNanoq2025/jule-jeopardy.git"
+              className={styles.gitHubLink}
+              alt="link to project on GitHub"
+              target="_blank"
+            >
+              GitHub
+            </a>
+            |
+            <a
+              href="https://www.figma.com/design/FC14bfUIDoUVdMzxh04fF1/Jeopardy?node-id=0-1&t=NRmrzIN9CqZNhEja-1"
+              className={styles.figmaLink}
+              alt="link to figma draft"
+              target="_blank"
+            >
+              Figma
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );

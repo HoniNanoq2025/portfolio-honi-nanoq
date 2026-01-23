@@ -31,6 +31,18 @@
   height: 200px;
 }
 
+.links {
+  color: #1e3a8a;
+}
+
+.links > a {
+  color: #1e3a8a;
+}
+
+.links > a:hover {
+  color: purple;
+}
+
 .links > .gitHubLink {
   padding-right: 5px;
 }
