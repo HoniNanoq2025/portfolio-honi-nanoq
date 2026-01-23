@@ -26,14 +26,25 @@ export default function Projects() {
               height={200}
             />
           </a>
-          <a
-            href="https://github.com/HoniNanoq2025/recall-the-midwife-unofficial-podcast.git"
-            className={styles.gitHubLink}
-            alt="link to project on GitHub"
-            target="_blank"
-          >
-            GitHub
-          </a>
+          <div className={styles.links}>
+            <a
+              href="https://github.com/HoniNanoq2025/recall-the-midwife-unofficial-podcast.git"
+              className={styles.gitHubLink}
+              alt="link to project on GitHub"
+              target="_blank"
+            >
+              GitHub
+            </a>
+            |
+            <a
+              href="https://www.figma.com/design/blwnnRP6dmL0oJVEss7cBV/ReCall-the-Midwife?node-id=0-1&t=7HGsJmfo14dZzPBq-1"
+              className={styles.figmaLink}
+              alt="link to figma draft"
+              target="_blank"
+            >
+              Figma
+            </a>
+          </div>
         </div>
         <div className={styles.projectWrapper}>
           <h3 className={styles.projectHeader}>Maggie Smith Tribute</h3>
@@ -48,14 +59,25 @@ export default function Projects() {
               height={200}
             />
           </a>
-          <a
-            href="https://github.com/HoniNanoq2025/hejdi-kulturformidleren-opg.git"
-            className={styles.gitHubLink}
-            alt="link to project on GitHub"
-            target="_blank"
-          >
-            GitHub
-          </a>
+          <div className={styles.links}>
+            <a
+              href="https://github.com/HoniNanoq2025/hejdi-kulturformidleren-opg.git"
+              className={styles.gitHubLink}
+              alt="link to project on GitHub"
+              target="_blank"
+            >
+              GitHub
+            </a>
+            |
+            <a
+              href="https://www.figma.com/design/s3m3WocCufO1heu1nTnJ1w/Dame-Maggie-Smith?node-id=0-1&t=ApXb3Ojc0SDqmBXv-1"
+              className={styles.figmaLink}
+              alt="link to figma draft"
+              target="_blank"
+            >
+              Figma
+            </a>
+          </div>
         </div>
         <div className={styles.projectWrapper}>
           <h3 className={styles.projectHeader}>Smart Home</h3>
@@ -70,14 +92,25 @@ export default function Projects() {
               height={200}
             />
           </a>
-          <a
-            href="https://github.com/HoniNanoq2025/SmartHome.git"
-            className={styles.gitHubLink}
-            alt="link to project on GitHub"
-            target="_blank"
-          >
-            GitHub
-          </a>
+          <div className={styles.links}>
+            <a
+              href="https://github.com/HoniNanoq2025/SmartHome.git"
+              className={styles.gitHubLink}
+              alt="link to project on GitHub"
+              target="_blank"
+            >
+              GitHub
+            </a>
+            |
+            <a
+              href="https://www.figma.com/design/8XZjlDYLZXmbTLqZ2lbpA4/SMART-HOME?node-id=0-1&t=XFcMiB2dmqJiPegG-1"
+              className={styles.figmaLink}
+              alt="link to figma draft"
+              target="_blank"
+            >
+              Figma
+            </a>
+          </div>
         </div>
         <div className={styles.projectWrapper}>
           <h3 className={styles.projectHeader}>Bogormen (The Bookworm)</h3>
@@ -94,15 +127,26 @@ export default function Projects() {
               className={styles.bogormen}
             />
           </a>
-          <a
-            href={BogormenPDF}
-            className={styles.gitHubLink}
-            alt="link to project PDF"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            PDF
-          </a>
+          <div className={styles.links}>
+            <a
+              href={BogormenPDF}
+              className={styles.gitHubLink}
+              alt="link to project PDF"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              PDF
+            </a>
+            |
+            <a
+              href="https://www.figma.com/design/FK7tP5MtDzC1cLvxGhGFA3/Bogormen---Webshop-opgave?node-id=0-1&t=FH0pToeMxw1REETv-1"
+              className={styles.figmaLink}
+              alt="link to figma draft"
+              target="_blank"
+            >
+              Figma
+            </a>
+          </div>
         </div>
       </div>
     </div>
