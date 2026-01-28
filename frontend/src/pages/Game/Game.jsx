@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { FaTrophy, FaRedo } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import Button from "../../components/Button/Button";
 import styles from "./Game.module.css";
 
 const emojis = ["🎮", "🎨", "🎭", "🎪"];
@@ -29,6 +30,7 @@ export default function Game() {
   const [flippedCards, setFlippedCards] = useState([]);
   const [moves, setMoves] = useState(0);
   const [isGameComplete, setIsGameComplete] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -69,6 +71,7 @@ export default function Game() {
       cards.length > 0 && cards.every((card) => card.isMatched);
     if (allMatched && !isGameComplete) {
       setIsGameComplete(true);
+      setShowModal(true);
       localStorage.setItem("memoryGameCompleted", "true");
     }
   }, [cards, isGameComplete]);
@@ -90,10 +93,15 @@ export default function Game() {
     setFlippedCards([]);
     setMoves(0);
     setIsGameComplete(false);
+    setShowModal(false);
   };
 
   const goToGallery = () => {
     navigate("/gallery");
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
   };
 
   return (
@@ -122,13 +130,15 @@ export default function Game() {
       </div>
 
       <div className={styles.actions}>
-        <button onClick={resetGame} className={styles.resetButton}>
-          <FaRedo />
-          Reset Game
-        </button>
+        <Button
+          onButtonClick={resetGame}
+          icon={<FaRedo />}
+          buttonText="RESET GAME"
+          className={styles.resetButton}
+        />
       </div>
 
-      {isGameComplete && (
+      {showModal && (
         <div className={styles.gameOverlay}>
           <div className={styles.modal}>
             <FaTrophy />
@@ -140,8 +150,8 @@ export default function Game() {
               🎉 Gallery has been unlocked! 🎉
             </p>
             <div className={styles.modalActions}>
-              <button onClick={goToGallery}>View Gallery</button>
-              <button onClick={() => setIsGameComplete(false)}>Close</button>
+              <Button onButtonClick={goToGallery} buttonText="VIEW GALLERY" />
+              <Button onButtonClick={closeModal} buttonText="CLOSE" />
             </div>
           </div>
         </div>

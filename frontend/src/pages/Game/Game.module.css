@@ -1,7 +1,7 @@
 .gameContainer {
-  max-width: 64rem;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 3rem 1rem;
+  padding: 3.2rem 1rem;
 }
 
 .gameHeader {
@@ -16,6 +16,7 @@
 
 .gameParagraph {
   font-family: "Poppins", "Irish Grover", sans-serif;
+  margin-top: 20px;
 }
 
 .moves {
@@ -25,7 +26,7 @@
 
 .gameGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   max-width: 32rem;
   margin: 0 auto 2rem;
@@ -40,7 +41,7 @@
 }
 
 .cardHidden {
-  background: linear-gradient(135deg, #ec4899, #9333ea);
+  background: linear-gradient(135deg, #1e76c3, #001c7a);
 }
 
 .cardHidden:hover {
@@ -72,10 +73,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.75rem 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  border-radius: 0.5rem;
+  width: 250px;
 }
 
 .resetButton:hover {
@@ -127,4 +125,16 @@
 .modalActions button:last-child {
   background: rgba(255, 255, 255, 0.2);
   color: white;
+}
+
+@media (min-width: 640px) {
+  .gameGrid {
+    grid-template-columns: repeat(3, 1fr); /* Tablet: 3 kolonner */
+  }
+}
+
+@media (min-width: 993px) {
+  .gameGrid {
+    grid-template-columns: repeat(4, 1fr); /* Desktop: 4 kolonner */
+  }
 }
