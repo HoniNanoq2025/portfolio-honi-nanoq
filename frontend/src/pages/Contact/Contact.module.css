@@ -21,6 +21,41 @@
   text-align: center;
 }
 
+/* Locked state */
+.lockedWrapper {
+  min-height: calc(100vh - 4rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lockedContent {
+  text-align: center;
+  color: #001c7a;
+}
+
+.lockIcon {
+  font-size: 4rem;
+  opacity: 0.5;
+  margin-bottom: 1rem;
+}
+
+.lockedContent h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.lockedContent p {
+  opacity: 0.7;
+  margin-bottom: 1rem;
+}
+
+.lockedContent span {
+  opacity: 0.5;
+  font-size: 0.875rem;
+}
+
 @media (min-width: 1200px) {
   .contact {
     margin: 0 auto;
