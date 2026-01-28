@@ -40,18 +40,24 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   margin-bottom: 2rem; /* Kun bottom margin */
+  width: fit-content;
 }
 
 .card {
+  width: 140px;
+  height: 140px;
   aspect-ratio: 1 / 1;
   border-radius: 1rem;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
   font-size: 3rem;
+  padding: 0;
+  border: none;
 }
 
 .cardHidden {
   background: linear-gradient(135deg, #1e76c3, #001c7a);
+  color: white;
 }
 
 .cardHidden:hover {
@@ -72,6 +78,10 @@
 
 .emoji {
   font-size: 3rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .actions {
@@ -146,5 +156,10 @@
 @media (min-width: 993px) {
   .gameGrid {
     grid-template-columns: repeat(4, 1fr); /* Desktop: 4 kolonner */
+  }
+
+  .card {
+    width: 160px;
+    height: 160px;
   }
 }
