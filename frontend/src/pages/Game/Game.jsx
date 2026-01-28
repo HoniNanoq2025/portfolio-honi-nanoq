@@ -108,9 +108,7 @@ export default function Game() {
     <div className={styles.gameContainer}>
       <div className={styles.gameHeader}>
         <h1>Memory Game</h1>
-        <p className={styles.gameParagraph}>
-          Match all pairs to unlock the gallery!
-        </p>
+        <p className={styles.gameParagraph}>Match all pairs to unlock!</p>
         <div className={styles.moves}>Moves: {moves}</div>
       </div>
 
