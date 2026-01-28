@@ -61,7 +61,7 @@
   transition: transform 0.3s ease;
 }
 
-.galleryCard:hover .image {
+.galleryCard:hover .galleryImage {
   transform: scale(1.1);
 }
 
@@ -76,7 +76,7 @@
   padding: 1rem;
 }
 
-.galleryCard:hover .overlay {
+.galleryCard:hover .galleryOverlay {
   opacity: 1;
 }
 
