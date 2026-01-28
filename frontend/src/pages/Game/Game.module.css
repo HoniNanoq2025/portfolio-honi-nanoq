@@ -1,7 +1,11 @@
 .gameContainer {
   max-width: 100%;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 3.2rem 1rem;
+  margin: 0 auto;
 }
 
 .gameHeader {
@@ -24,12 +28,18 @@
   font-size: 1.25rem;
 }
 
+.gameGridWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
 .gameGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  max-width: 32rem;
-  margin: 0 auto 2rem;
+  margin-bottom: 2rem; /* Kun bottom margin */
 }
 
 .card {

@@ -114,19 +114,21 @@ export default function Game() {
         <div className={styles.moves}>Moves: {moves}</div>
       </div>
 
-      <div className={styles.gameGrid}>
-        {cards.map((card) => (
-          <button
-            key={card.id}
-            onClick={() => handleCardClick(card.id)}
-            disabled={card.isMatched || card.isFlipped}
-            className={`${styles.card} ${card.isFlipped || card.isMatched ? styles.cardFlipped : styles.cardHidden} ${card.isMatched ? styles.cardMatched : ""}`}
-          >
-            <span className={styles.emoji}>
-              {card.isFlipped || card.isMatched ? card.emoji : "?"}
-            </span>
-          </button>
-        ))}
+      <div className={styles.gameGridWrapper}>
+        <div className={styles.gameGrid}>
+          {cards.map((card) => (
+            <button
+              key={card.id}
+              onClick={() => handleCardClick(card.id)}
+              disabled={card.isMatched || card.isFlipped}
+              className={`${styles.card} ${card.isFlipped || card.isMatched ? styles.cardFlipped : styles.cardHidden} ${card.isMatched ? styles.cardMatched : ""}`}
+            >
+              <span className={styles.emoji}>
+                {card.isFlipped || card.isMatched ? card.emoji : "?"}
+              </span>
+            </button>
+          ))}
+        </div>
       </div>
 
       <div className={styles.actions}>
