@@ -35,7 +35,7 @@ export default function Game() {
     if (flippedCards.length === 2) {
       const [firstId, secondId] = flippedCards;
       const firstCard = cards.find((card) => card.id === firstId);
-      const secondCard = cards.find((card) => card.id === secondCard);
+      const secondCard = cards.find((card) => card.id === secondId);
 
       if (firstCard && secondCard && firstCard.emoji === secondCard.emoji) {
         setTimeout(() => {
