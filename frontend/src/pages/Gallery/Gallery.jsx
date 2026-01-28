@@ -1,6 +1,7 @@
 import { useEffect, useState, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaLock } from "react-icons/fa6";
+import { IoSparkles } from "react-icons/io5";
 import styles from "./Gallery.module.css";
 
 /* Vite glob – statisk import af alle billeder */
@@ -53,9 +54,9 @@ export default function Gallery() {
     <div className={styles.galleryContainer}>
       <div className={styles.galleryHeader}>
         <div className={styles.galleryTitle}>
-          <FaSparkles />
+          <IoSparkles />
           <h1>Gallery Unlocked!</h1>
-          <FaSparkles />
+          <IoSparkles />
         </div>
         <p>Congratulations on completing the memory game. Enjoy my gallery!</p>
       </div>
