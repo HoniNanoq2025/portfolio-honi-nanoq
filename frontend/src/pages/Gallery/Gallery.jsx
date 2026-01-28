@@ -25,7 +25,7 @@ export default function Gallery() {
   }, [navigate]);
 
   const galleryImages = useMemo(() => {
-    return Object.entries(imageModules).map(([Path2D, mod], index) => {
+    return Object.entries(imageModules).map(([path, mod], index) => {
       const filename = path.split("/").pop() ?? "";
 
       return {
