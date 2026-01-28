@@ -84,6 +84,13 @@
   justify-content: center;
 }
 
+.cardLogo {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  pointer-events: none;
+}
+
 .actions {
   display: flex;
   justify-content: center;
@@ -191,6 +198,11 @@
   .card {
     width: 160px;
     height: 160px;
+  }
+
+  .cardLogo {
+    width: 70%;
+    height: 70%;
   }
 
   .modal {

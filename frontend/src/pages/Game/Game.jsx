@@ -130,7 +130,15 @@ export default function Game() {
               className={`${styles.card} ${card.isFlipped || card.isMatched ? styles.cardFlipped : styles.cardHidden} ${card.isMatched ? styles.cardMatched : ""}`}
             >
               <span className={styles.emoji}>
-                {card.isFlipped || card.isMatched ? card.emoji : "?"}
+                {card.isFlipped || card.isMatched ? (
+                  card.emoji
+                ) : (
+                  <img
+                    src="/HoniNanoqLogo01-small-wider-stroke.png"
+                    alt="Hidden card"
+                    className={styles.cardLogo}
+                  />
+                )}
               </span>
             </button>
           ))}
