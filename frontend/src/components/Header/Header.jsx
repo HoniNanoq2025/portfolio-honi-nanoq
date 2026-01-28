@@ -56,6 +56,11 @@ export default function Header() {
               Resume
             </NavLink>
           )}
+          {shouldShow("/gallery") && (
+            <NavLink to="/gallery" className={styles.link}>
+              Gallery
+            </NavLink>
+          )}
           {shouldShow("/contact") && (
             <NavLink to="/contact" className={styles.link}>
               Contact
@@ -105,6 +110,13 @@ export default function Header() {
             onClick={handleLinkClick}
           >
             Resumé
+          </NavLink>
+          <NavLink
+            to="/gallery"
+            className={styles.mobileLink}
+            onClick={handleLinkClick}
+          >
+            Gallery
           </NavLink>
           <NavLink
             to="/contact"

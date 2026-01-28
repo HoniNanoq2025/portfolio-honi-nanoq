@@ -7,6 +7,8 @@ import Contact from "./pages/Contact/Contact";
 import Message from "./components/Message/Message";
 import Projects from "./pages/Projects/Projects";
 import Resume from "./pages/Resume/Resume";
+import Gallery from "./pages/Gallery/Gallery";
+import Game from "./pages/Game/Game";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import styles from "./App.module.css";
@@ -24,6 +26,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/contact/thank-you" element={<Message />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/game" element={<Game />} />
         </Routes>
       </main>
 

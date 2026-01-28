@@ -1,0 +1,130 @@
+.gameContainer {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.gameHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.gameHeader p {
+  opacity: 0.7;
+}
+
+.gameParagraph {
+  font-family: "Poppins", "Irish Grover", sans-serif;
+}
+
+.moves {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+
+.gameGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  max-width: 32rem;
+  margin: 0 auto 2rem;
+}
+
+.card {
+  aspect-ratio: 1 / 1;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+  font-size: 3rem;
+}
+
+.cardHidden {
+  background: linear-gradient(135deg, #ec4899, #9333ea);
+}
+
+.cardHidden:hover {
+  transform: scale(1.05);
+}
+
+.cardHidden:active {
+  transform: scale(0.95);
+}
+
+.cardFlipped {
+  background: white;
+}
+
+.cardMatched {
+  opacity: 0.5;
+}
+
+.emoji {
+  font-size: 3rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+.resetButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.resetButton:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.gameOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.modal {
+  background: linear-gradient(135deg, #facc15, #f97316);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  color: white;
+  max-width: 28rem;
+}
+
+.modal svg {
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.modalActions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.modalActions button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+
+.modalActions button:first-child {
+  background: white;
+  color: #f97316;
+}
+
+.modalActions button:last-child {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
