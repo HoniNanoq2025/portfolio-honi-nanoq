@@ -152,10 +152,10 @@ export default function Game() {
             <FaTrophy />
             <h2>Congratulations!</h2>
             <p className={styles.gameParagraph}>
-              You completed the game in {moves} moves!
+              🎉You completed the game in {moves} moves!🎉
             </p>
             <p className={styles.gameParagraph}>
-              🎉 Gallery has been unlocked! 🎉
+              Resumé, Contact form and Gallery have been unlocked!
             </p>
             <div className={styles.modalActions}>
               <Button onButtonClick={goToGallery} buttonText="VIEW GALLERY" />
