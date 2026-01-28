@@ -100,6 +100,14 @@ export default function Game() {
     navigate("/gallery");
   };
 
+  const goToResume = () => {
+    navigate("/resume");
+  };
+
+  const goToContactForm = () => {
+    navigate("/contact");
+  };
+
   const closeModal = () => {
     setShowModal(false);
   };
@@ -151,6 +159,8 @@ export default function Game() {
             </p>
             <div className={styles.modalActions}>
               <Button onButtonClick={goToGallery} buttonText="VIEW GALLERY" />
+              <Button onButtonClick={goToResume} buttonText="VIEW RESUME" />
+              <Button onButtonClick={goToContactForm} buttonText="CONTACT" />
               <Button onButtonClick={closeModal} buttonText="CLOSE" />
             </div>
           </div>
