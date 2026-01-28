@@ -25,15 +25,17 @@ export default function Gallery() {
   }, [navigate]);
 
   const galleryImages = useMemo(() => {
-    return Object.entries(imageModules).map(([path, mod], index) => {
-      const filename = path.split("/").pop() ?? "";
+    return Object.entries(imageModules)
+      .map(([path, mod], index) => {
+        const filename = path.split("/").pop() ?? "";
 
-      return {
-        id: index,
-        url: mod.default,
-        query: filename.replace(/\.\w+$/, "").replace(/-/g, " "),
-      };
-    });
+        return {
+          id: index,
+          url: mod.default,
+          query: filename.replace(/\.\w+$/, "").replace(/-/g, " "),
+        };
+      })
+      .sort(() => Math.random() - 0.5);
   }, []);
 
   if (!isUnlocked) {
