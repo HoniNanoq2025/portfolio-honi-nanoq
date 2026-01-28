@@ -108,6 +108,7 @@
   align-items: center;
   justify-content: center;
   z-index: 50;
+  padding: 10px;
 }
 
 .modal {
@@ -116,7 +117,13 @@
   border-radius: 1rem;
   text-align: center;
   color: white;
-  max-width: 28rem;
+  max-width: 500px;
+  width: 100%;
+}
+
+.modal h2 {
+  font-family: "Irish Grover", "Risque", "Poppins", sans-serif;
+  margin-bottom: 1rem;
 }
 
 .modal svg {
@@ -126,15 +133,19 @@
 }
 
 .modalActions {
-  display: flex;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
   justify-content: center;
+  margin-top: 1.5rem;
 }
 
 .modalActions button {
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
   font-weight: 600;
+  font-size: 0.875rem;
+  white-space: nowrap;
 }
 
 .modalActions button:first-child {
@@ -142,7 +153,17 @@
   color: #f97316;
 }
 
-.modalActions button:last-child {
+.modalActions button:nth-child(2) {
+  background: rgba(255, 255, 255, 0.9);
+  color: #f97316;
+}
+
+.modalActions button:nth-child(3) {
+  background: rgba(255, 255, 255, 0.8);
+  color: #f97316;
+}
+
+.modalActions button:nth-child(4) {
   background: rgba(255, 255, 255, 0.2);
   color: white;
 }
@@ -150,6 +171,15 @@
 @media (min-width: 640px) {
   .gameGrid {
     grid-template-columns: repeat(3, 1fr); /* Tablet: 3 kolonner */
+  }
+
+  .modalActions {
+    grid-template-columns: repeat(4, 1fr); /* 4 kolonner på desktop */
+    gap: 1rem;
+  }
+
+  .modalActions button {
+    font-size: 0.9rem;
   }
 }
 
@@ -161,5 +191,19 @@
   .card {
     width: 160px;
     height: 160px;
+  }
+
+  .modal {
+    max-width: 800px;
+    padding: 2.5rem;
+  }
+
+  .modalAction {
+    gap: 0.75rem;
+  }
+
+  .modalActions button {
+    font-size: 1rem;
+    padding: 0.85rem 1.2rem;
   }
 }
