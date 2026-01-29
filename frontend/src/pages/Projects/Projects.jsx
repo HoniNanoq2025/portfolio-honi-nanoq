@@ -28,8 +28,17 @@ export default function Projects() {
           </a>
           <div className={styles.links}>
             <a
-              href="https://github.com/HoniNanoq2025/recall-the-midwife-unofficial-podcast.git"
+              href="https://youtu.be/pn3QIgXJN-U"
               className={styles.gitHubLink}
+              alt="link to project demo on YouTube"
+              target="_blank"
+            >
+              YouTube demo
+            </a>
+            |
+            <a
+              href="https://github.com/HoniNanoq2025/recall-the-midwife-unofficial-podcast.git"
+              className={`${styles.figmaLink} ${styles.gitHubLink}`}
               alt="link to project on GitHub"
               target="_blank"
             >
@@ -163,8 +172,17 @@ export default function Projects() {
           </a>
           <div className={styles.links}>
             <a
-              href="https://github.com/HoniNanoq2025/jule-jeopardy.git"
+              href="https://youtu.be/U1lMY8Fa728"
               className={styles.gitHubLink}
+              alt="link to project demo on YouTube"
+              target="_blank"
+            >
+              YouTube demo
+            </a>
+            |
+            <a
+              href="https://github.com/HoniNanoq2025/jule-jeopardy.git"
+              className={`${styles.figmaLink} ${styles.gitHubLink}`}
               alt="link to project on GitHub"
               target="_blank"
             >
