@@ -123,7 +123,7 @@ export default function Projects() {
             <img
               src={BogormenImg}
               alt="Bogormen Wordpress project"
-              width={350}
+              height={200}
               className={styles.bogormen}
             />
           </a>
