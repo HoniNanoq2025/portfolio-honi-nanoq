@@ -1,8 +1,11 @@
+import { useState } from "react";
 import ImgHoni from "../../assets/img/profile-pic-01-400x400.png";
 import Timeline from "../../components/Timeline/Timeline";
 import styles from "./About.module.css";
 
 export default function About() {
+  const [isTyped, setIsTyped] = useState(false);
+
   return (
     <div className={styles.about}>
       <div className={styles.aboutHeader}>
@@ -20,7 +23,7 @@ export default function About() {
       <div className={styles.whoIsHoni}>
         <h2>Who is HONI?</h2>
         <p>HONI is a contraction of:</p>
-        <p className={`${styles.name} ${styles.typewriter}`}>
+        <p className={`${styles.name} ${styles.typewriter} ${isTyped ? styles.typed : ''}`} onAnimationEnd={() => setIsTyped(true)}>
           <span className={styles.bold}>H</span>ejdi{" "}
           <span className={styles.bold}>Ø</span>stergaard{" "}
           <span className={styles.bold}>NI</span>elsen
