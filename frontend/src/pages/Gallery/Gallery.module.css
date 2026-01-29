@@ -173,7 +173,7 @@
   right: 0.5rem;
   background: transparent;
   border: none;
-  color: white;
+  color: rgba(255, 255, 255, 0.7);
   font-size: 2.5rem;
   cursor: pointer;
   z-index: 1001;
@@ -189,10 +189,12 @@
 }
 
 .modalClose svg {
+  position: absolute;
   width: 2.5rem;
   height: 2.5rem;
-  color: white;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+  color: rgba(255, 255, 255, 0.7);
+  filter: drop-shadow(0 2px 4px rgba(255, 255, 255, 0.5));
+  stroke: currentColor;
 }
 
 .modalClose:hover {
@@ -232,10 +234,12 @@
   }
 
   .modalClose {
-    top: -4rem;
-    font-size: 3rem;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 2.5rem;
     width: 4rem;
     height: 4rem;
+    overflow: visible;
   }
 
   .modalImage {

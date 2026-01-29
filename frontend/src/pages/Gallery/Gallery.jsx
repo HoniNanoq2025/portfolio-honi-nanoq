@@ -1,7 +1,7 @@
 import { useEffect, useState, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaLock } from "react-icons/fa6";
-import { IoClose } from "react-icons/io5";
+import { FaXmark } from "react-icons/fa6";
 import styles from "./Gallery.module.css";
 
 /* Vite glob – statisk import af alle billeder */
@@ -131,7 +131,7 @@ export default function Gallery() {
               onClick={handleCloseModal}
               aria-label="Close modal"
             >
-              <IoClose />
+              <FaXmark />
             </button>
             <img
               src={selectedImage.url}
