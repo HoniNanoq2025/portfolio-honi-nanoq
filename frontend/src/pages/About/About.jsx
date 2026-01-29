@@ -20,7 +20,7 @@ export default function About() {
       <div className={styles.whoIsHoni}>
         <h2>Who is HONI?</h2>
         <p>HONI is a contraction of:</p>
-        <p className={styles.name}>
+        <p className={`${styles.name} ${styles.typewriter}`}>
           <span className={styles.bold}>H</span>ejdi{" "}
           <span className={styles.bold}>Ø</span>stergaard{" "}
           <span className={styles.bold}>NI</span>elsen
