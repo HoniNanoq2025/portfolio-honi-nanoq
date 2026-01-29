@@ -169,8 +169,8 @@
 
 .modalClose {
   position: absolute;
-  top: -3rem;
-  right: 0;
+  top: 0.5rem;
+  right: 0.5rem;
   background: transparent;
   border: none;
   color: white;
@@ -186,6 +186,13 @@
     transform 0.2s ease,
     opacity 0.2s ease;
   opacity: 0.8;
+}
+
+.modalClose svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: white;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
 }
 
 .modalClose:hover {
