@@ -52,6 +52,7 @@
   overflow: hidden;
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 20px 25px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
 .galleryImage {
@@ -121,4 +122,127 @@
 .lockedContent span {
   opacity: 0.5;
   font-size: 0.875rem;
+}
+
+/* Modal styles */
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modalContent {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90dvh;
+  display: flex;
+  flex-direction: column;
+  animation: scaleIn 0.3s ease-in-out;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modalClose {
+  position: absolute;
+  top: -3rem;
+  right: 0;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+  z-index: 1001;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+  opacity: 0.8;
+}
+
+.modalClose:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.modalImage {
+  width: 100%;
+  height: auto;
+  max-height: calc(90dvh - 5rem);
+  object-fit: contain;
+  border-radius: 0.5rem;
+}
+
+.modalCaption {
+  margin-top: 1rem;
+  text-align: center;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 0.5rem;
+}
+
+.modalCaption p {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .modalContent {
+    max-width: 80vw;
+    max-height: 85dvh;
+  }
+
+  .modalClose {
+    top: -4rem;
+    font-size: 3rem;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .modalImage {
+    max-height: calc(85dvh - 5rem);
+  }
+
+  .modalCaption p {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .modalContent {
+    max-width: 1200px;
+    max-height: 90dvh;
+  }
 }
