@@ -9,6 +9,7 @@ import Projects from "./pages/Projects/Projects";
 import Resume from "./pages/Resume/Resume";
 import Gallery from "./pages/Gallery/Gallery";
 import Game from "./pages/Game/Game";
+import NotFound from "./pages/NotFound/NotFound";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import styles from "./App.module.css";
@@ -28,6 +29,7 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/game" element={<Game />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
 
