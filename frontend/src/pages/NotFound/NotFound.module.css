@@ -1,3 +1,7 @@
+.errorContainer {
+  color: black;
+}
+
 .errorHeader {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   color: black;

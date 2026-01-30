@@ -3,7 +3,7 @@ import styles from "./NotFound.module.css";
 
 export default function NotFound() {
   return (
-    <div>
+    <div className={styles.errorContainer}>
       <h1 className={styles.errorHeader}>404</h1>
       <p>Page not found</p>
       <Link to="/">Back to front page</Link>
