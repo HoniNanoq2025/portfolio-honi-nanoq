@@ -1,8 +1,98 @@
 .errorContainer {
-  color: black;
+  position: relative; /* vigtigt for overlay */
+  background-image: url("/404-bg02.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100dvh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Overlay */
+.errorContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 50% gennemsigtig sort */
+  z-index: 1;
+}
+
+.messageContainer {
+  position: relative;
+  z-index: 2;
+  max-width: 750px;
+  padding: 50px;
+  color: whitesmoke;
+  text-align: center;
 }
 
 .errorHeader {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
-  color: black;
+  font-size: clamp(24px, 5vh, 80px);
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.errorText {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.errorText span {
+  font-family: "Irish Grover";
+  text-transform: uppercase;
+}
+
+.errorTxt {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.messageContainer a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.messageContainer a:hover {
+  color: #ffd700;
+}
+
+.messageContainer a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* afstand under teksten */
+  width: 100%;
+  height: 2px;
+  background-color: #ffd700;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.messageContainer a:hover::after {
+  transform: scaleX(1);
+}
+
+@media (min-width: 768px) {
+  .messageContainer {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .messageContainer {
+    min-width: 1000px;
+  }
 }
