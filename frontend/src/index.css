@@ -29,7 +29,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-#root { width: 100%; }
+#root {
+  width: 100%;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
 
 a {
   font-weight: 500;
@@ -43,9 +51,16 @@ a:hover {
 body {
   margin: 0;
   display: flex;
+  flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
   background: linear-gradient(to bottom, #ffffff 25%, #1e76c3 100%);
+}
+
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {

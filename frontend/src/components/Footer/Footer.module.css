@@ -4,11 +4,12 @@
   background-color: #001c7a;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
-.footerText{
-    font-size: 14px;
-    padding: 5px 0;
+.footerText {
+  font-size: 14px;
+  padding: 5px 0;
 }
