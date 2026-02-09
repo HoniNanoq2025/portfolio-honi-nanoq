@@ -1,12 +1,22 @@
 .app {
-  min-height: 100svh;
-  min-height: 100dvh;
-  min-height: 100vh;
+  min-height: 100vh; /* fallback */
+  min-height: 100dvh; /* dynamic viewport height */
+  min-height: 100svh; /* small viewport height (preferred where supported) */
   width: 100%;
   display: flex;
   flex-direction: column;
+  background: linear-gradient(
+    to bottom,
+    #ffffff 25%,
+    #1e76c3 100%
+  ); /* ensure background covers under footer */
 }
 
 .main {
   flex-grow: 1;
+}
+
+/* remove bottom margins from the last content element so it doesn't create a gap above the footer */
+.main > *:last-child {
+  margin-bottom: 0 !important;
 }
