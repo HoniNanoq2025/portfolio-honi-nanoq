@@ -2,7 +2,6 @@ import MSTributeImg from "../../assets/img/projects/maggie-smith-tribute-school-
 import BogormenImg from "../../assets/img/projects/bogormen-wordpress-school-project.png";
 import CTMPodcastImg from "../../assets/img/projects/recall-the-midwife-podcast-project.png";
 import SmartHomeImg from "../../assets/img/projects/smart-home-school-project.png";
-import TardisMediaImg from "../../assets/img/projects/tardis-media-library-school-project-2025.png";
 import JeopardyImg from "../../assets/img/projects/christmas-jeopardy-school-project-2025.png";
 import BogormenPDF from "../../documents/Bogormen-wordpress-project-2025.pdf";
 import styles from "./Projects.module.css";
