@@ -35,7 +35,7 @@ export default function Projects() {
             >
               YouTube demo
             </a>
-            | 
+            |
             <a
               href={PodcastCaseStudyDK}
               className={styles.gitHubLink}
@@ -43,7 +43,7 @@ export default function Projects() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Case study (DK)
+               Case study (DK)
             </a>
             |
             <a
