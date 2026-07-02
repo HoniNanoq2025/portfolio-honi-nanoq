@@ -38,12 +38,12 @@ export default function Projects() {
             |
             <a
               href={PodcastCaseStudyDK}
-              className={styles.gitHubLink}
+              className={`${styles.figmaLink} ${styles.gitHubLink}`}
               alt="link to case study PDF in Danish"
               target="_blank"
               rel="noopener noreferrer"
             >
-               Case study (DK)
+              Case study (DK)
             </a>
             |
             <a
