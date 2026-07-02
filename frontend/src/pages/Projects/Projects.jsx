@@ -4,6 +4,7 @@ import CTMPodcastImg from "../../assets/img/projects/recall-the-midwife-podcast-
 import SmartHomeImg from "../../assets/img/projects/smart-home-school-project.png";
 import JeopardyImg from "../../assets/img/projects/christmas-jeopardy-school-project-2025.png";
 import BogormenPDF from "../../documents/Bogormen-wordpress-project-2025.pdf";
+import PodcastCaseStudyDK from "../../documents/Case-study_Portfolio_ReCall-The-Midwife_unofficial-podcast_DK.pdf";
 import styles from "./Projects.module.css";
 
 export default function Projects() {
@@ -33,6 +34,16 @@ export default function Projects() {
               target="_blank"
             >
               YouTube demo
+            </a>
+            |
+            <a
+              href={PodcastCaseStudyDK}
+              className={styles.gitHubLink}
+              alt="link to case study PDF in Danish"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Case study (DK)
             </a>
             |
             <a
