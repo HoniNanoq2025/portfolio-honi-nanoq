@@ -35,7 +35,7 @@ export default function Projects() {
             >
               YouTube demo
             </a>
-            |
+            | 
             <a
               href={PodcastCaseStudyDK}
               className={styles.gitHubLink}
