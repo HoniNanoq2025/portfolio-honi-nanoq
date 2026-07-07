@@ -178,7 +178,7 @@ export default function Projects() {
             <img
               src={JeopardyImg}
               alt="Christmas Jeopardy group project"
-              height={200}
+              height={300}
             />
           </a>
           <div className={styles.links}>
