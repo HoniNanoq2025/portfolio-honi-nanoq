@@ -41,7 +41,7 @@ export default function About() {
           Whether I'm building a website, designing a user interface or learning
           a new technology, I usually start by asking questions.
         </p>
-        <ul>
+        <ul className={styles.aboutUL}>
           <li className={styles.paragraph}>Why is this difficult to use?</li>
           <li className={styles.paragraph}>How could it be made simpler?</li>
           <li className={styles.paragraph}>

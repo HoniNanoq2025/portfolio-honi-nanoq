@@ -89,6 +89,11 @@
 .paragraph {
   margin: 10px auto;
 }
+
+.aboutUL {
+  padding-left: 20px;
+}
+
 @media (min-width: 993px) {
   .aboutHoniPic {
     width: 250px;
