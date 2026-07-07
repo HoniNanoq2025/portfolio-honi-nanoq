@@ -20,6 +20,11 @@
   flex-direction: column;
 }
 
+.centered {
+  /* justify-content: center; */
+  align-items: center;
+}
+
 .projectHeader {
   font-family: "Permanent Marker";
   color: #1e3a8a;

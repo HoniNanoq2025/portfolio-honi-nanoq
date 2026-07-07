@@ -168,7 +168,7 @@ export default function Projects() {
             </a>
           </div>
         </div>
-        <div className={styles.projectWrapper}>
+        <div className={`${styles.projectWrapper} ${styles.centered}`}>
           <h3 className={styles.projectHeader}>Christmas Jeopardy (game)</h3>
           <a
             href="https://youtu.be/U1lMY8Fa728"
