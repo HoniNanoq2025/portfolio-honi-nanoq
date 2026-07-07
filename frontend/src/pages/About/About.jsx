@@ -23,7 +23,10 @@ export default function About() {
       <div className={styles.whoIsHoni}>
         <h2>Who is HONI?</h2>
         <p>HONI is a contraction of:</p>
-        <p className={`${styles.name} ${styles.typewriter} ${isTyped ? styles.typed : ''}`} onAnimationEnd={() => setIsTyped(true)}>
+        <p
+          className={`${styles.name} ${styles.typewriter} ${isTyped ? styles.typed : ""}`}
+          onAnimationEnd={() => setIsTyped(true)}
+        >
           <span className={styles.bold}>H</span>ejdi{" "}
           <span className={styles.bold}>Ø</span>stergaard{" "}
           <span className={styles.bold}>NI</span>elsen
@@ -31,31 +34,63 @@ export default function About() {
       </div>
       <div className={styles.profileTxt}>
         <p className={styles.paragraph}>
-          I was born in Herning, Denmark, and grew up in Gurre, Skrydstrup and
-          Sunds.
+          I enjoy understanding how digital products work, and even more, how
+          they can work better.
         </p>
         <p className={styles.paragraph}>
-          I am a quick study and thrive with steep learning curves.
-          <br /> I am easily adaptable, whether it’s new surroundings, or new
-          systems.
+          Whether I'm building a website, designing a user interface or learning
+          a new technology, I usually start by asking questions.
+        </p>
+        <ul>
+          <li className={styles.paragraph}>Why is this difficult to use?</li>
+          <li className={styles.paragraph}>How could it be made simpler?</li>
+          <li className={styles.paragraph}>
+            What problem is this actually trying to solve?
+          </li>
+          <li className={styles.paragraph}>
+            That curiosity has shaped both my education and my career.
+          </li>
+        </ul>
+        <p className={styles.paragraph}>
+          Before becoming a frontend developer, I spent more than a decade
+          working with CMS platforms, digital content and cross-team
+          coordination. I have worked with large-scale websites, multilingual
+          content and product information across the Nordic markets, giving me
+          an understanding of how digital products are built, maintained and
+          improved over time.
         </p>
         <p className={styles.paragraph}>
-          I can also teach. For example, I trained several of the Elkjøp Content
-          writers how to use CoreMedia for publishing content.
+          Studying frontend development allowed me to combine that experience
+          with hands-on development. I enjoy working across the space between
+          design and development, where user experience, technology and business
+          needs all influence the final solution.
         </p>
         <p className={styles.paragraph}>
-          In my spare time I enjoy reading and prefer reading books in English.
-          It helps me maintain my English language skills.
+          The projects in this portfolio were created during my frontend
+          education and reflect different aspects of how I like to work. Looking
+          back at them while building this portfolio has also been an
+          opportunity to reflect on the decisions I made, recognise what worked
+          well and consider how I would approach the same challenges today.
         </p>
         <p className={styles.paragraph}>
-          I also enjoy singing karaoke, creating decoupage, doing puzzles and,
-          when it isn’t in storage, I enjoy making creative sticky vinyl
-          projects with my Cricut.
+          I'm naturally curious and enjoy learning new tools when they help
+          solve real problems. Whether I'm working with React, WordPress, PHP or
+          AI-assisted development, my focus is less about the technology itself
+          and more about understanding which solution best fits the problem.
         </p>
         <p className={styles.paragraph}>
-          When I lived in Greenland, I used to participate in the yearly
-          igloo-building event. Something that requires teamwork and
-          collaboration.
+          Colleagues, former managers and teachers have described me as
+          reliable, structured and quick to learn. I enjoy sharing knowledge,
+          collaborating across disciplines and turning complex ideas into
+          digital solutions that are easier to understand and use.
+        </p>
+        <p className={styles.paragraph}>
+          Outside work, I enjoy reading, creative projects and exploring
+          subjects that capture my curiosity. At the moment, that includes
+          building a comprehensive listening guide for Big Finish's Doctor Who
+          audio dramas. It's a personal project that combines research,
+          information architecture and a genuine enthusiasm for making complex
+          collections easier to navigate.
         </p>
       </div>
       <Timeline />
