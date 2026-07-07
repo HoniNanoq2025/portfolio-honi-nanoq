@@ -24,7 +24,7 @@ export default function Projects() {
             <img
               src={CTMPodcastImg}
               alt="Recall The Midwife unofficial podcast project"
-              height={200}
+              height={220}
             />
           </a>
           <div className={styles.links}>
@@ -76,7 +76,7 @@ export default function Projects() {
             <img
               src={MSTributeImg}
               alt="Maggie Smith Tribute page project"
-              height={200}
+              height={220}
             />
           </a>
           <div className={styles.links}>
@@ -109,7 +109,7 @@ export default function Projects() {
             <img
               src={SmartHomeImg}
               alt="Smart home of the future project"
-              height={200}
+              height={220}
             />
           </a>
           <div className={styles.links}>
@@ -143,7 +143,7 @@ export default function Projects() {
             <img
               src={BogormenImg}
               alt="Bogormen Wordpress project"
-              height={200}
+              height={220}
               className={styles.bogormen}
             />
           </a>
@@ -178,7 +178,7 @@ export default function Projects() {
             <img
               src={JeopardyImg}
               alt="Christmas Jeopardy group project"
-              height={250}
+              height={220}
             />
           </a>
           <div className={styles.links}>
