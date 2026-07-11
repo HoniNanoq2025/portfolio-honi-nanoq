@@ -5,6 +5,7 @@ import SmartHomeImg from "../../assets/img/projects/smart-home-school-project.pn
 import JeopardyImg from "../../assets/img/projects/christmas-jeopardy-school-project-2025.png";
 import BogormenPDF from "../../documents/Bogormen-wordpress-project-2025.pdf";
 import PodcastCaseStudyDK from "../../documents/Case-study_Portfolio_ReCall-The-Midwife_unofficial-podcast_DK.pdf";
+import BogormenCaseStudyDK from "../../documents/Case-study_Portfolio_Bogormen_DK.pdf";
 import JeopardyCaseStudyDK from "../../documents/Case-study_Portfolio_Jeopardy_DK.pdf";
 import styles from "./Projects.module.css";
 
@@ -156,6 +157,16 @@ export default function Projects() {
               rel="noopener noreferrer"
             >
               PDF
+            </a>
+            |
+            <a
+              href={BogormenCaseStudyDK}
+              className={`${styles.figmaLink} ${styles.gitHubLink}`}
+              alt="link to case study PDF in Danish"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Case study (DK)
             </a>
             |
             <a
